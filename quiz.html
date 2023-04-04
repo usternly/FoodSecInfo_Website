@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="quiz.js"></script>
+</head>
+<body onload="update()">
+<header class="headerfooter">
+    <logotype class="element"><a href="index.html">FoodSecInfo Hamilton</a></logotype>
+    <nav class="headerfootertype element">
+        <div><a href="contact.html">Contact</a></div>
+        <div><a href="about.html">About</a></div>
+        <div><a href="quiz.html">Quiz</a></div>
+    </nav>
+</header>
+<br><br>
+<main>
+    <quiz>
+        <article>
+            <div class="max">Food Resource Quiz</div>
+            <div class="mid">Instruction</div>
+            <div class="para">Complete the quiz below and press "Submit". A list of organizations will appear on the right side of the page that best match the criteria you provided. No information or data will be collected or stored by FoodSecInfo.
+            </div>
+        </article>
+        <div id="quiz">
+            <div class="formbuilder-checkbox-group form-group field-specialization">
+                <label for="specialization" class="min formbuilder-checkbox-group-label">What type of food security services
+                    do you need?</label>
+                <div class="checkbox-group">
+                    <div class="formbuilder-checkbox">
+                        <input class="specialization" name="specialization[]" access="false" id="specialization-0"
+                               value="emergency food supply" type="checkbox" checked="checked">
+                        <label for="specialization-0" class="parabold">Emergency Food Supply</label>
+                    </div>
+                    <div class="formbuilder-checkbox">
+                        <input class="specialization" name="specialization[]" access="false" id="specialization-1"
+                               value="hot meal" type="checkbox" checked="checked">
+                        <label for="specialization-1" class="parabold">Hot Meal</label>
+                    </div>
+                    <div class="formbuilder-checkbox">
+                        <input class="specialization" name="specialization[]" access="false" id="specialization-2"
+                               value="cooking classes" type="checkbox" checked="checked">
+                        <label for="specialization-2" class="parabold">Cooking Classes</label>
+                    </div>
+                    <div class="formbuilder-checkbox">
+                        <input class="specialization" name="specialization[]" access="false" id="specialization-3"
+                               value="school lunch" type="checkbox" checked="checked">
+                        <label for="specialization-3" class="parabold">School Lunch</label>
+                    </div>
+                </div>
+            </div>
+            <div class="formbuilder-number form-group field-age">
+                <label for="age" class="min formbuilder-number-label">What is your age?</label>
+                <input type="number" class="age" name="age" access="false" value="8" min="0" max="130" id="age">
+            </div>
+            <div class="formbuilder-checkbox-group form-group field-woman">
+                <label for="woman" class="min formbuilder-checkbox-group-label">Do you identify as a woman?</label>
+                <div class="checkbox-group">
+                    <div class="formbuilder-checkbox-inline">
+                        <label for="woman-0" class="kc-toggle">
+                            <input class="woman" name="woman[]" access="false" id="woman-0" type="checkbox"
+                                   ><span></span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="formbuilder-checkbox-group form-group field-newcomer">
+                <label for="newcomer" class="min formbuilder-checkbox-group-label">Are you a newcomer?</label>
+                <div class="checkbox-group">
+                    <div class="formbuilder-checkbox-inline">
+                        <label for="newcomer-0" class="kc-toggle">
+                            <input class="newcomer" name="newcomer[]" access="false" id="newcomer-0" type="checkbox"
+                                   ><span></span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="formbuilder-checkbox-group form-group field-halal">
+                <label for="halal" class="min formbuilder-checkbox-group-label">Dietary Restriction: Halal?</label>
+                <div class="checkbox-group">
+                    <div class="formbuilder-checkbox-inline">
+                        <label for="halal-0" class="kc-toggle">
+                            <input class="halal" name="halal[]" access="false" id="halal-0" type="checkbox"
+                                   ><span></span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="formbuilder-checkbox-group form-group field-kosher">
+                <label for="kosher" class="min formbuilder-checkbox-group-label">Dietary Restriction: Kosher?</label>
+                <div class="checkbox-group">
+                    <div class="formbuilder-checkbox-inline">
+                        <label for="kosher-0" class="kc-toggle">
+                            <input class="kosher" name="kosher[]" access="false" id="kosher-0" type="checkbox"
+                                   ><span></span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="formbuilder-button form-group field-submit">
+                <input class="min" type="submit" value="Submit" onclick="update()">
+            </div>
+        </div>
+    </quiz>
+
+
+    <results>
+        <article>
+            <div class="max">Results</div>
+            <div class="min">Relevant Organizations</div>
+            <div class="para">Once you've submitted the quiz on the left, the most relevant food security organizations to fit your needs will appear below. Feel free to change any of your answers and resubmit for a new set of results!
+            </div>
+        </article>
+        <output id="results">
+
+        </output>
+    </results>
+</main>
+<br><br><br><br><br><br>
+<footer class="headerfootertype headerfooter">
+    <div class="element">
+        <logotype><a href="index.html">FoodSecInfo Hamilton</a></logotype>
+    </div>
+    <div class="element">
+        <div>Copyright ( 2023 )</div>
+        <br>
+        <div>FoodSecInfo Hamilton combats child hunger by advocating for greater access to essential nutrition resources
+            and promoting increased food literacy among families - working collaboratively with stakeholders and relying
+            on expert knowledge for effective change.
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
